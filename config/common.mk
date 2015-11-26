@@ -129,6 +129,10 @@ PRODUCT_COPY_FILES += \
 # T-Mobile theme engine
 include vendor/cm/config/themes_common.mk
 
+# Phonelocation!
+PRODUCT_COPY_FILES +=  \
+    vendor/cm/prebuilt/common/media/location/suda-phonelocation.dat:system/media/location/suda-phonelocation.dat
+
 # Required CM packages
 PRODUCT_PACKAGES += \
     Development \
@@ -155,6 +159,7 @@ PRODUCT_PACKAGES += \
     CMAccount \
     CMHome \
     CyanogenSetupWizard \
+    PhoneLocationProvider \
     CMSettingsProvider
 
 # CM Platform Library
